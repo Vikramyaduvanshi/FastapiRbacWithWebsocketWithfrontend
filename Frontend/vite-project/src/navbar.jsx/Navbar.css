@@ -1,0 +1,64 @@
+/* Resetting default margins for the navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a; /* Dark sleek background */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    color: #00ff88; /* Trading app vibe (Green/Neon tone) */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Links Container */
+.navbar .links {
+    display: flex;
+    gap: 20px; /* Links ke beech ka gap */
+    align-items: center;
+}
+
+/* Individual Link Styling (React Router's <Link> renders as an <a> tag) */
+.navbar .links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+}
+
+/* Hover Effect on Links */
+.navbar .links a:hover {
+    color: #00ff88;
+    border-bottom: 2px solid #00ff88;
+}
+
+/* Responsive Design for Mobile/Small Screens */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .navbar .logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar .links {
+        gap: 15px;
+    }
+
+    .navbar .links a {
+        font-size: 0.9rem;
+    }
+}
