@@ -6,15 +6,13 @@ database_url=DATABASE_URL = "postgresql://postgres:896825@localhost:5432/trading
 
 engine=create_engine(database_url)
 
-SessionLocal=sessionmaker(
+SessionLocal = sessionmaker(
 autocommit=False,
 autoflush=False,
 bind=engine
-
 )
 
 Base=declarative_base()
-
 def get_db():
     db=SessionLocal()
     try:

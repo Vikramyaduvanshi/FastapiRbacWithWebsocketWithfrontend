@@ -54,7 +54,6 @@ async def login( db: db_dependency,response:Response,email:str=Form(...), passwo
         httponly=True,
         secure=False,
         samesite="lax",
-      
         max_age= 5*60
     )
     response.set_cookie(

@@ -6,6 +6,7 @@ from cryptography.fernet import Fernet
 
 JWT_SECRET = "c21efdc8881f7f9cc2b9cb6c833d1fa83143586742b8c467be07866c8df48080"
 AES_SECRET = "TM5P-ztVxqQ6XFU9UgrUBY9ltM8Cf5pVskEyKjsMVlE="
+
 fernet = Fernet(AES_SECRET.encode())
 
 

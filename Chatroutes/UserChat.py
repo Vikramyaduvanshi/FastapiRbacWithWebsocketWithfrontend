@@ -13,7 +13,7 @@ from Middleware.Websocket_role import websocket_current_user
 chatrouter = APIRouter(
     prefix="/chat",
     tags=["chat"]
-)
+)   
 db_dependency = Annotated[Session, Depends(get_db)]
 admin_dependency=Annotated[dict,Depends(websocket_current_user(["admin"]))]
 
